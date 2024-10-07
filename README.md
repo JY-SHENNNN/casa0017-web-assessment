@@ -1,6 +1,11 @@
 # CASA0017 Web Assessment ReadMe File
+# Group 3 - Weastern Web Weavers 
 
-# DELETE THE LAST LINE AND REPLACE THIS LINE WITH YOUR WEBSITE NAME 
+Hello! Our names are:
+- Ethan
+- Orhan
+- Jiaying
+- Xuanze
 
 This is the Final assessment template for CASA0017 - Please use this template and edit the relevant sections to personalise.
 This section has a short introduction to what the website is about and what research problem the site is solving.  Remeber this file showcases your website source code so use it to sell what you can do as a group or showcase in a future portfolio. 
