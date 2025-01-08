@@ -1,8 +1,74 @@
-<html>
-    <head>
-        <title>Website Title</title>
-    </head>
-    <body>
-        <h1> This is where your website html will go.</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tube Lines</title>
+  <script type="module" crossorigin src="/assets/main-BM-V4UOl.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/maplibre-gl-CcRjLUik.js">
+  <link rel="stylesheet" crossorigin href="/assets/maplibre-gl-MGNviBeR.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-GfF0GtRg.css">
+</head>
+<body>
+
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Welcome to London Tube Planner</h2>
+        <p>Plan your journey with ease and explore the city!</p>
+        <p>Click on the line name to see the lines.</p>
+        <p>Click on the map to see their stops.</p>
+        <p>Select the line and click on the search button to see more information.</p>
+        
+        <!-- 添加 GitHub 链接 -->
+        <p>Visit the project on 
+            <a href="https://github.com/JY-SHENNNN/casa0017-web-assessment/tree/main" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a> 
+            for more details.
+        </p>
+    </div>
+</div>
+
+   <!-- qury box -->
+    <div id="box">
+      <h1>Which tube you would like to use today?</h1>
+      <div id="current-time" style="position: absolute; top: 10px; right: 10px; font-size: 1rem; color: #555;"></div>
+      <form id="routeForm">
+          <select id="line" name="line" required>
+              <option value="" disabled selected>Select a line</option>
+          </select>            
+
+          <button type="submit">Search</button>
+      </form>
+    </div>
+        
+    
+
+    <!--line name-->
+    <div id="container">
+        <h2>Tube Line Names</h2>
+        <div id="content">Loading...</div>
+        <div id="tooltip" class="tooltip"></div>
+    </div>
+
+    <!-- map div -->
+    <div id="map-container">
+        <div id="map"></div> 
+        <div id="tooltip1" class="tooltip1"></div>
+    </div>
+    
+
+    <script>
+      // Display current time in the box
+      function updateTime() {
+          const currentTime = new Date().toLocaleTimeString();
+          document.getElementById('current-time').textContent = `Current Time: ${currentTime}`;
+      }
+  
+        setInterval(updateTime, 1000); // Update every second
+        updateTime(); // Initial call
+    </script>
+
+</body>
 </html>

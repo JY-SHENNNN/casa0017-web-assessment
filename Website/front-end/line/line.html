@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tube Route Finder</title>
+  <script type="module" crossorigin src="/assets/line-BHlTszrq.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/maplibre-gl-CcRjLUik.js">
+  <link rel="stylesheet" crossorigin href="/assets/maplibre-gl-MGNviBeR.css">
+  <link rel="stylesheet" crossorigin href="/assets/line-DWXMeMjV.css">
+</head>
+<body>
+
+    <!-- popup window -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Welcome to London Tube Planner</h2>
+            <p>You are able to see all the tube line station that you select.</p>
+            <p>You can plan your journey by selecting the start and destination station.</p>
+            <p>You can see the line status, platform and the timetable of the selected line.</p>
+            <p>Enjoy your journey!</p>
+        </div>
+    </div>
+
+    
+
+    <!-- query form -->
+    <div class="container" id="box">
+        <h1>Plan Your Journey</h1>
+        <form id="routeForm">
+            <div id="current-time" style="position: absolute; top: 10px; right: 10px; font-size: 1rem; color: #555;"></div>
+            <label for="from">From:</label>
+            <select id="from" name="from" required>
+                <option value="" disabled selected>Select start location</option>
+            </select>
+
+            <label for="to">To:</label>
+            <select id="to" name="to" required>
+                <option value="" disabled selected>Select destination</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+
+    <!-- map div -->
+    <div id="map-container">
+        <div id="map"></div> 
+    </div>
+
+    <div id="chart-container"></div>
+
+    <!-- info box -->
+    <div id="info-box">
+        <h2 id="LineStatus"> Line Status: </h2>
+    </div>
+
+    <!-- script -->
+    <script>
+      // Display current time in the box
+      function updateTime() {
+          const currentTime = new Date().toLocaleTimeString();
+          document.getElementById('current-time').textContent = `Current Time: ${currentTime}`;
+      }
+  
+        setInterval(updateTime, 1000); // Update every second
+        updateTime(); // Initial call
+    </script>
+
+</body>
+</html>
