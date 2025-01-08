@@ -29,7 +29,7 @@ With the current technology, the TfL Journey Planner performs a similar function
 The design process begins with creating the website layout. From a personal perspective, the website should visualize the tube lines with detailed station names and include interactive features such as selectable dropdown boxes. Additionally, the site integrates service status information, estimated tube arrival times, and train destinations. The final layout is shown above.
 
 ## Development process
-![](https://raw.githubusercontent.com/JY-SHENNNN/casa0017-web-assessment/refs/heads/main/Group%20Report/src/flowchart.png)
+
 The development starts by coding the `index.html` and `style.css` files. The main `div` elements divide the page into three sections, to ensure better organization and application in later stages. Basic layout properties such as width, height, padding, and background color are set in `style.css` to ensure a clean and structured interface. The core functionality focuses on visualizing tube lines and stations on the map. Initially, Google Maps is used, as demonstrated in workshops, by integrating the Google Maps API to load the map seamlessly.
 
 #### Visualization of Lines and Stations
@@ -39,6 +39,18 @@ To display markers and lines on the map, accurate latitude and longitude data ar
 #### Line Visualization on line.html
 
 The second page (line.html) follows a similar process. When the page loads, the line ID is extracted from the URL, and the TfL API is queried to obtain the route and stop point details for the selected line. Polylines are drawn to represent the branches, while circular markers display the station locations. This ensures that users can view a comprehensive visualization of the entire tube line. Google Maps provides powerful visualization tools, but public deployment can lead to security risks, especially with API key exposure. Handling large numbers of markers and polylines can also affect performance. Deck.GL addresses these issues by offering high performance without the need for API keys. Thus, Deck.GL is used to display the lines and stations through `ScatterplotLayer` and `LineLayer` components with exactly same implementation idea. 
+
+The additional information is shown below for better understanding:
+![](https://raw.githubusercontent.com/JY-SHENNNN/casa0017-web-assessment/refs/heads/main/Group%20Report/src/flowchart.png)
+
+| API Endpoint                           | Returned Data                                   | Description                                         |
+| ------------------------------------- | --------------------------------------------- | --------------------------------------------------- |
+| `/Line/Mode/tube/Route`                | List of Tube lines with route details (name, id).  | Used to list all Tube lines on the map and dropdown menu. |
+| `/Line/{lineId}/StopPoints`            | List of stop points with details (name, location). | Used to plot stop points on the map as scatter layers.   |
+| `/Line/{lineId}/Route/Sequence/all`    |  Route sequences including coordinates for each branch. | Used to draw lines for each route branch on the map. |
+| `/Line/{lineId}/Status`                | Status details including service status and severity.| Displays real-time status of the selected Tube line. |
+| `/StopPoint/Mode/tube`                 | Stop point metadata including Naptan codes and locations.| Provides Naptan codes for matching stations by name. |
+| `/StopPoint/{naptanCode}/Arrivals`     | List of train arrivals with expected times and destinations.| Shows upcoming train arrivals and schedules for a station. |
 
 #### Key challenge and solution:
 The main challenge was incomplete API data and incorrect calls, leading to missing information. For example, discrepancies between the Hammersmith & City line’s id and name caused errors when querying Naptan codes. This issue was resolved by using `console.log` to trace the parameters passed into the API and identify the correct endpoints. Additionally, bus, tube, and train stations share names but have different Naptan codes, which caused incorrect message returned. By inspecting API responses and using browser developer tools, the appropriate codes for tube mode can be obtained correctly.
@@ -65,6 +77,5 @@ This project aims to provide real-time tube information to help users plan their
 I, Jiaying Shen, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
 
-Digitally Sign with Your name Here
-
-ASSESSMENT DATE
+Jiaying shen
+8 January 2025
