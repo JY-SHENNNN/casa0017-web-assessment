@@ -1,33 +1,38 @@
-# CASA0017 Web Assessment ReadMe File
-# Group 3 - Weastern Web Weavers 
+# CASA0017 Web Assessment London Tube Planner
 
-Hello! Our names are:
-- Ethan
-- Orhan
-- Jiaying
-- Xuanze
+Hello! Jiaying Shen is here 😀
 
-This is the Final assessment template for CASA0017 - Please use this template and edit the relevant sections to personalise.
-This section has a short introduction to what the website is about and what research problem the site is solving.  Remeber this file showcases your website source code so use it to sell what you can do as a group or showcase in a future portfolio. 
+---
+🚇 The London Tube Planner is a web application designed to streamline journey planning by offering a comprehensive overview of tube travel. By entering a starting point and destination, users receive detailed real-time information regarding the tube lines connecting these locations. This includes line names, current operational status, estimated train arrival times and arrival platform, providing an efficient and user-friendly tool for navigating London’s tube network.
 
-## Use this README File 
+## How it looks like?
 
-Use this section to show us what your Website is about.   Include a Screenshot to the Website in this README file, link to the various frameworks you've used.  If you want to show off your website you can add a Gif of you interacting with your site.   Emojis are also fun to include as well 😄
 
-Look at some other Websites online in GitHub and see how they use the README File to showcase thier site.  Good examples are:
+https://github.com/user-attachments/assets/cf5fc5b2-f8d8-423e-92d5-f11c50b56a29
 
-- https://github.com/smaranjitghose/awesome-portfolio-websites
-- https://github.com/gohugoio/hugo    
-- https://github.com/academicpages/academicpages.github.io
 
-##  Replace the Tags on the side menu of GitHub
+![](https://raw.githubusercontent.com/JY-SHENNNN/casa0017-web-assessment/refs/heads/main/Group%20Report/src/index2.png)
+![](https://raw.githubusercontent.com/JY-SHENNNN/casa0017-web-assessment/refs/heads/main/Group%20Report/src/line2.png)
 
-Put some tags in to make your site more searchable in GitHub
+## Technologies Used
+- VScode: coding .html/.css/.js for front-end development
+- Netlify: generate static website
+- Miro: project design
+- Github 
+- DeckGL: for map visualization
 
-## Include A Section That Tells Developers How To Install The App
+## Design iterate
 
-Include a section that gives intructions on how to install the app or run it in Docker.  What versions of the plugins are you assuming?  Maybe define a licence as well, this is good practise.
+Raw sketch:
+![](https://raw.githubusercontent.com/JY-SHENNNN/casa0017-web-assessment/refs/heads/main/Group%20Report/src/website%20layout.png)
+
+home page build: 
+
+line page build:
+
+final:
+
+
 
 ##  Contact Details
-
-Having Contact Details is also good as it shows people how to get in contact with you if they'd like to contribute to the app. 
+📧：zczqjs2@ucl.ac.uk
