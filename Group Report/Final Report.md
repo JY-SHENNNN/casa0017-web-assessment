@@ -24,9 +24,12 @@ With the current technology, the TfL Journey Planner performs a similar function
 ---
 ## Website Design Overview
 
-The design process begins with creating the website layout. From a personal perspective, the website should visualize the tube lines with detailed station names and include interactive features such as selectable dropdown boxes. Additionally, the site integrates service status information, estimated tube arrival times, and train destinations. The final layout is shown below:
+![](https://raw.githubusercontent.com/JY-SHENNNN/casa0017-web-assessment/refs/heads/main/Group%20Report/src/website%20layout.png)
+
+The design process begins with creating the website layout. From a personal perspective, the website should visualize the tube lines with detailed station names and include interactive features such as selectable dropdown boxes. Additionally, the site integrates service status information, estimated tube arrival times, and train destinations. The final layout is shown above.
 
 ## Development process
+![](https://raw.githubusercontent.com/JY-SHENNNN/casa0017-web-assessment/refs/heads/main/Group%20Report/src/flowchart.png)
 The development starts by coding the `index.html` and `style.css` files. The main `div` elements divide the page into three sections, to ensure better organization and application in later stages. Basic layout properties such as width, height, padding, and background color are set in `style.css` to ensure a clean and structured interface. The core functionality focuses on visualizing tube lines and stations on the map. Initially, Google Maps is used, as demonstrated in workshops, by integrating the Google Maps API to load the map seamlessly.
 
 #### Visualization of Lines and Stations
