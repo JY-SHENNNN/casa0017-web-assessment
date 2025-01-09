@@ -26,8 +26,9 @@ https://github.com/user-attachments/assets/cf5fc5b2-f8d8-423e-92d5-f11c50b56a29
 <<<<<<< HEAD
 
 =======
-tips: The first loading for the map would take 10-20 seconds, thanks for your patient.
->>>>>>> 1c9651c148095d590117f92db309993feed72136
+tips: 
+1. The first loading for the map would take 10-20 seconds, thanks for your patient.
+2. If unexpected things happen, please try to refresh the page.
 
 ---
 ## Features
