@@ -23,7 +23,11 @@ https://github.com/user-attachments/assets/cf5fc5b2-f8d8-423e-92d5-f11c50b56a29
 4. 🔍 **Click "Search"** to view more details about the selected line.
 5. 🛤️ **Select a starting point and destination** from the dropdown menus.
 6. 🚉 **Check real-time train arrivals** by selecting a station.
+<<<<<<< HEAD
 
+=======
+tips: The first loading for the map would take 10-20 seconds, thanks for your patient.
+>>>>>>> 1c9651c148095d590117f92db309993feed72136
 
 ---
 ## Features
